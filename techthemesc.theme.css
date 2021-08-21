@@ -1,0 +1,431 @@
+/**
+ * @name         Tech
+ * @description  dark theme
+ * @author       Xyhlo#9766
+ * @version      2.0
+*/
+/* █ █▀▄▀█ █▀█ █▀█ █▀█ ▀█▀ █▀
+   █ █░▀░█ █▀▀ █▄█ █▀▄ ░█░ ▄█
+           No Touch           */
+
+@import "https://leeprky.github.io/themes/WindowsXI/imports/compiled.css";
+@import url('https://xhylo.github.io/BetterSettings/BetterSettings.css');
+@import url(https://ghostmander.github.io/discordfont/DiscordFont.css);
+
+
+/* █▀▀ █░█ █▀ ▀█▀ █▀█ █▀▄▀█ █ █▀ ▄▀█ ▀█▀ █ █▀█ █▄░█
+   █▄▄ █▄█ ▄█ ░█░ █▄█ █░▀░█ █ ▄█ █▀█ ░█░ █ █▄█ █░▀█ */
+
+:root {
+
+    /* Gradients */
+    --default-gradient: 315deg, rgba(var(--alt-color), 0.6) 0%, rgba(var(--alt-color), 0.8) 74%;
+    --special-gradient: 315deg, rgba(var(--alt-color), 0.1) 0%, #c987b8 74%;
+    --red-gradient: 315deg, #AA3738 0%, #F04747 74%;
+    --red-hsl: hsl(359, 63%, 53%);
+    --yellow-gradient: 315deg, #c29b1b 0%, #ffa640 74%;
+    --yellow-hsl: hsl(46, 72%, 52%);
+    --green-gradient: 315deg, #507a73 0%, #4b7c72  74%;
+    --grey-gradient: 315deg, rgba(var(--alt-color), 0.6) 0%, rgba(var(--alt-color), 0.8) 74%;
+    --white-gradient: 315deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.342) 74%;
+       
+    /* Transitions */
+    --font-normal: 500;
+    --font-hover: bold;
+    --font-size-hover: 15px;
+    --hover-transition: 0.1s linear;
+    --transform-normal: scale(1);
+    --hover-transform: scale(1.15);
+    --setting-hover-transform: scale(1.025);
+    --button-hover-transform: scale(1.03);
+ 
+    /* Greenple Colour*/
+    --green-color: var(--alt-color2);
+    --green-color2: var(--alt-color);
+    --green-bar-on: #2b3555;
+    --green-bar-bg: var(--green-color);
+    --green-slider-on: var(--green-color);
+    --green-slider-off: #2b3555;
+    --green-slider-dot: #fff;
+
+    /* Indiicator */
+    --indicator-connected: 60, 150, 60;
+    --indicator-hovered: rgba(36, 36, 36, 0.25);
+    --indicator-unread: 255, 255, 255;
+    --indicator-selected: var(--alt-color);
+    --indicator-rounding: 4px !important;
+}
+
+/* Rounding Things */
+:root {
+   --roundness: 8px;
+   --borders-buttons-rounded: 6px !important; /*Border shapes for rounded buttons. 25px for circle, 0px for square*/
+   --borders-buttons-circle: 12px!important; /*Border shapes for circle buttons. 25px for circle, 0px for square*/
+   --borders-switches: 8px !important; /*Border shapes for switches. 15px for circle, 0px for square*/
+   --borders-checkboxes: 35% !important; /*Border shapes for checkboxes. 50% for circle, 0% for square*/
+   --borders-slider-bars: 5px !important; /*Border shapes for slider bars. 5px for circle, 0px for square*/
+   --borders-slider-grabbers: 3px !important; /*Border shapes for slider grabbers. 8px for circle, 0px for square*/
+   --borders-progress-bars: 2px !important; /*Border shapes for progress bars. 5px for circle, 0px for square*/
+   --borders-inputs: 8px !important; /*Border shapes for inputs. 25px for circle, 0px for square*/
+   --borders-contexts: 8px !important; /*Border shapes for context menus. 25px for circle, 0px for square*/
+   --borders-popouts: 8px !important; /*Border shapes for popouts. 25px for circle, 0px for square*/
+   --borders-modals: 8px !important; /*Border shapes for modals. 25px for circle, 0px for square*/
+   --borders-cards: 8px !important; /*Border shapes for cards. 25px for circle, 0px for square*/
+   --borders-media: 8px !important; /*Border shapes for images, videos, audios and gifs. 25px for circle, 0px for square*/
+   --borders-previews: 8px !important; /*Border shapes for previews. 25px for circle, 0px for square*/
+   --borders-servers-default: 14% !important; /*Border shapes for server icons and circle buttons on server side. 50% for circle, 0% for square*/
+   --borders-servers-interactive: 18% !important; /*Border shapes for hovered or selected elements mentioned in previous description. 50% for circle, 0% for square*/
+   --borders-folders: 18px !important; /*Border shapes for server folders. 35px for circle, 0px for square*/
+   --borders-avatars: 28% !important; /*Border shapes for avatars. 50% for circle, 0% for square*/
+   --borders-icons-default: 17% !important; /*Border shapes for icons that have width equal height. 50% for circle, 0% for square*/
+   --borders-icons-wide: 2.5px !important; /*Border shapes for icons that have more width than height. 5px for circle, 0px for square*/
+   --borders-labels-large: 7px !important; /*Border shapes for large text and number indicators. 15px for circle, 0px for square*/
+   --borders-labels-small: 7px !important; /*Border shapes for small text and number indicators. 10px for circle, 0px for square*/
+   --borders-pills: 2.5px !important; /*Border shapes for unread badges and selected server pills. 5px for circle, 0px for square*/
+   --borders-lines: 2.5px !important; /*Border shapes for lines when you drag categories or channels. 2px for circle, 0px for square*/
+   --borders-role-outlines: 5px !important; /*Border shapes for roles outlines. 10px for circle, 0px for square*/
+   --borders-role-dots: 5px !important; /*Border shapes for roles dots. 10px for circle, 0px for square*/
+   --borders-messages: 8px !important; /*Border shapes for hovered or highlighted messages. 25px for circle, 0px for square*/
+   --borders-mentions: 5px !important; /*Border shapes for mentions. 10px for circle, 0px for square*/
+   --borders-reactions: 5px !important; /*Border shapes for reactions. 10px for circle, 0px for square*/
+   --borders-codes: 8px !important; /*Border shapes for codes and codeblocks. 10px for circle, 0px for square*/
+   --borders-embeds: 8px !important; /*Border shapes for embeds. 25px for circle, 0px for square*/
+   --borders-replies: 8px !important; /*Shape for top left replies border. 15px for circle, 0px for square*/
+   --borders-quotes: 8px !important; /*Border shapes for quote icon. 2px for circle, 0px for square*/
+   --borders-spoilers: 2px !important; /*Border shapes for spoilers. 10px for circle, 0px for square*/
+   --borders-tooltips: 8px !important; /*Border shapes for tooltips. 25px for circle, 0px for square*/
+   --borders-scrollbars: 8px !important; /*Border shapes for scrollbars. 10px for circle, 0px for square*/
+   --borders-sidebar-and-notices: 8px !important; /*Shape for top left sidebar and notices border. 25px for circle, 0px for square*/
+   --borders-navigation-highlight: 8px !important; /*Border shapes for navigation highlight when you press TAB. 25px for circle, 0px for square*/
+   --borders-toasts: 8px !important; /*Border shapes for toasts. 25px for circle, 0px for square*/
+   --borders-code-editors: 2px !important; /*Border shapes for code editors workspace. 10px for circle, 0px for square*/
+}
+
+ .theme-dark, .theme-light {
+  --bg-avatar: url(https://i.imgur.com/g37HbBe.png);
+  --Watermark-Alignment: 49%;
+  --display-version: none !important; /* Flex To Show | None To Hide */
+  --public-servers: none; 
+ }
+   
+/*  █▀▄ ▄▀█ █▀█ █▄▀
+    █▄▀ █▀█ █▀▄ █░█ */
+   
+   .theme-dark {
+   
+      --channeltextarea-background: var(--background-secondary);
+   
+      --bd-color: rgb(255, 255, 255) ;
+      --bd-color-hover: rgb(255, 255, 255) ;
+      --alt-color: 255, 255, 255;
+      --alt-color2: rgb(78, 78, 78) ;
+      --alt-color3: 204 ;/* HSL */
+      
+      --playing-color: var(--alt-color2) ;
+      --spotify-color: var(--alt-color2);
+      --streaming-color: rgb(127, 50, 179) ;
+      
+       /* Header Colors */
+       --header-primary: #FFFFFF ;
+       --header-secondary: #c7c7c7 ;
+       --channels-headings: var(--alt-color2) ;
+     
+       /* Text Colours */
+       --text-normal: #F0F0F0 ;
+       --text-muted: #B3B3B3 ;
+       --text-link: var(--alt-color2) ;
+       --channels-default: #dddddd ;
+       --interactive-normal: #F0F0F0 ;
+       --interactive-hover: #F0F0F0 ;
+       --interactive-hover-icons: var(--background-accent2) ;
+       --interactive-active: #fefeff ;
+        --interactive-active-icons: var(--background-accent2) ;
+       --interactive-muted: #585858 ;
+      
+       /* Background Colours */
+       --background-primary: #202020 ;
+       --background-primary-alt: #000000 ;
+       --background-secondary: #161616 ;
+       --background-secondary-alt: #191919;
+       --background-tertiary: #0f0f0f ;
+       --background-accent: var(--alt-color2) ;
+       --background-floating: #161616 ;
+      
+       /* Mentioned  Colours */
+       --background-mentioned: rgba(var(--alt-color), 0.1) ;
+       --background-mentioned-hover: rgba(var(--alt-color), 0.2) ;
+       --info-warning-foreground: #bdbdbdc5;
+      
+       --background-help-warning: rgba(250,166,26,0.1) ;
+       --background-help-info: rgba(0,176,244,0.1) ;
+      
+       /* Hovering Colours */
+       --background-modifier-hover: rgba(var(--alt-color), 0.2) ;
+       --background-modifier-active: rgba(var(--alt-color), 0.8) ;
+       --background-modifier-selected: rgba(var(--alt-color), 0.5) ; 
+       --background-modifier-accent: rgba(var(--alt-color), 0.1) ;  
+      
+      /* Box Shadow On Floating Elements Colours */
+      --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15) ;
+      --elevation-low: 0 1px 0 rgba(18, 20, 36, 0.767),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05) ;
+      --elevation-medium: 0 4px 4px rgba(0,0,0,0.16) ;
+      --elevation-high: 0 8px 16px rgba(0,0,0,0.24) ;
+      
+      --scrollbar-thin-thumb: #6c6c6c ;
+      --scrollbar-thin-track: #17171700;
+      --scrollbar-auto-thumb: #6c6c6c;
+      --scrollbar-auto-track: #17171700 ;
+      --scrollbar-auto-scrollbar-color-thumb: #6c6c6c ;
+      --scrollbar-auto-scrollbar-color-track: #171717da ;
+          
+      /* Other */
+      --radio-group-dot-foreground: var(--alt-color) ;
+      }
+   
+   
+      /* █░░ █ █▀▀ █░█ ▀█▀
+         █▄▄ █ █▄█ █▀█ ░█░ */
+   
+    .theme-light {
+       
+         --indicator-unread: 0, 0, 0 !important;
+    
+      --channeltextarea-background: var(--background-secondary);
+     
+      --bd-color: rgb(250, 53, 96) ;
+      --bd-color-hover:rgb(250, 53, 96) ;
+      --alt-color: 53, 170, 250 ;
+      --alt-color2:rgb(250, 53, 96) ;
+      --alt-color3: 235;
+      
+      --playing-color: var(--alt-color2) ;
+      --spotify-color: var(--alt-color2) ;
+      --streaming-color: rgb(127, 50, 179) ;
+      
+       /* Header Colors */
+       --header-primary: #1A1A1A ;
+       --header-secondary: #5E5D5F ;
+       --channels-headings: var(--alt-color2) ;
+     
+       /* Text Colours */
+       --text-normal: #585858 ;
+       --text-muted: #9e9d9d ;
+       --text-link: var(--alt-color2) ;
+       --channels-default: #585858 ;
+       --interactive-normal: #585858 ;
+       --interactive-hover: #424242 ;
+       --interactive-hover-icons: var(--background-accent2) ;
+       --interactive-active: #333333 ;
+        --interactive-active-icons: var(--background-accent2) ;
+       --interactive-muted: #989898 ;
+      
+       /* Background Colours */
+     --background-primary: #F3F3F3 ; 
+     --background-primary-alt: #F3F3F3 ; 
+     --background-secondary: #eeeeee ; 
+     --background-secondary-alt: #eeeeee ; 
+     --background-tertiary: #f3f3f3 ; 
+     --background-accent: var(--alt-color2) ; 
+     --background-floating: #ffffff ; 
+      
+       /* Mentioned  Colours */
+       --background-mentioned: #fcfcfc ; 
+       --background-mentioned-hover: #ebebeb ;
+       --info-warning-foreground: #1f1e1ec5;
+      
+       --background-help-warning: rgba(250,166,26,0.1);
+       --background-help-info: rgba(0,176,244,0.1) ;
+      
+       /* Scrollbar Colours */
+       --background-modifier-hover: rgba(var(--alt-color), 0.2) ;
+       --background-modifier-active: rgba(var(--alt-color), 0.8) ;
+       --background-modifier-selected: rgba(var(--alt-color), 0.5) ; 
+       --background-modifier-accent: rgba(var(--alt-color), 0.1) ;  
+      
+      /* Box Shadow On Floating Elements Colours */
+      --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15) ;
+
+      --elevation-low: 0 1px 0 rgba(18, 20, 36, 0.767),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+      --elevation-medium: 0 4px 4px rgba(0,0,0,0.16) ;
+      --elevation-high: 0 8px 16px rgba(0,0,0,0.24) ;
+      
+      --scrollbar-thin-thumb: #8A8A8A ;
+      --scrollbar-thin-track: #f7f7f700;
+      --scrollbar-auto-thumb: #8A8A8A;
+      --scrollbar-auto-track: #ffffff36 ;
+      --scrollbar-auto-scrollbar-color-thumb: #6c6c6c ;
+      --scrollbar-auto-scrollbar-color-track: #171717da ;
+          
+    }
+    #app-mount .menu-3sdvDG .item-1tOPte:not(#user-context-user-volume){font-weight:var(--font-normal);transition:var(--hover-transition)}
+#app-mount .menu-3sdvDG .item-1tOPte:not(#user-context-user-volume).focused-3afm-j,#app-mount .menu-3sdvDG .item-1tOPte:not(#user-context-user-volume):active{font-size:var(--font-size-hover);font-weight:var(--font-hover);background:linear-gradient(var(--default-gradient))}
+#app-mount .menu-3sdvDG .item-1tOPte:not(#user-context-user-volume).focused-3afm-j.colorPremium-p4p7qO,#app-mount .menu-3sdvDG .item-1tOPte:not(#user-context-user-volume):active.colorPremium-p4p7qO{background:linear-gradient(var(--special-gradient))}
+#app-mount .menu-3sdvDG .item-1tOPte:not(#user-context-user-volume).focused-3afm-j.colorDanger-2qLCe1,#app-mount .menu-3sdvDG .item-1tOPte:not(#user-context-user-volume):active.colorDanger-2qLCe1{background:linear-gradient(var(--red-gradient))}
+#app-mount .wrapper-2aW0bm .button-1ZiXG9 img,#app-mount .wrapper-2aW0bm .button-1ZiXG9 svg{transform:var(--transform-normal);transition:var(--hover-transition)}
+#app-mount .wrapper-2aW0bm .button-1ZiXG9:hover img,#app-mount .wrapper-2aW0bm .button-1ZiXG9:hover svg{transform:var(--hover-transform);color:#fff}
+#app-mount .wrapper-2aW0bm .button-1ZiXG9:not(.dangerous-2r8KxV):hover{background:linear-gradient(var(--default-gradient));color:#fff}
+#app-mount .wrapper-2aW0bm .button-1ZiXG9.dangerous-2r8KxV:hover{background:linear-gradient(var(--red-gradient));color:#fff}
+#app-mount #status-picker .item-1tOPte.focused-3afm-j,#app-mount #status-picker .item-1tOPte:active{transition:var(--hover-transition)}
+#app-mount #status-picker .item-1tOPte.focused-3afm-j .statusItem-33LqPf svg foreignObject .status-1AY8sU,#app-mount #status-picker .item-1tOPte:active .statusItem-33LqPf svg foreignObject .status-1AY8sU{background:#fff!important}
+#app-mount #status-picker .item-1tOPte.focused-3afm-j#status-picker-online,#app-mount #status-picker .item-1tOPte:active#status-picker-online{background:linear-gradient(var(--green-gradient))}
+#app-mount #status-picker .item-1tOPte.focused-3afm-j#status-picker-idle,#app-mount #status-picker .item-1tOPte:active#status-picker-idle{background:linear-gradient(var(--yellow-gradient))}
+#app-mount #status-picker .item-1tOPte.focused-3afm-j#status-picker-dnd,#app-mount #status-picker .item-1tOPte:active#status-picker-dnd{background:linear-gradient(var(--red-gradient))}
+#app-mount #status-picker .item-1tOPte.focused-3afm-j#status-picker-invisible,#app-mount #status-picker .item-1tOPte:active#status-picker-invisible{background:linear-gradient(var(--grey-gradient))}
+#app-mount .wrapper-1BJsBx .childWrapper-anI2G9 .homeIcon-tEMBK1{transform:var(--transform-normal);transition:var(--hover-transition)}
+#app-mount .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9{background:linear-gradient(var(--default-gradient))}
+#app-mount .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9 .homeIcon-tEMBK1{transform:var(--hover-transform)}
+#app-mount .circleIconButton-jET_ig svg{transform:var(--transform-normal)}
+#app-mount .circleIconButton-jET_ig.selected-ugP_am{background:linear-gradient(var(--green-gradient))}
+#app-mount .circleIconButton-jET_ig.selected-ugP_am svg{transform:var(--hover-transform)}
+#app-mount .side-8zPYf6 .item-PXvHYJ{transform:var(--transform-normal);transition:var(--hover-transition)}
+#app-mount .side-8zPYf6 .item-PXvHYJ:hover{transform:var(--setting-hover-transform)}
+#app-mount .side-8zPYf6 .item-PXvHYJ.selected-3s45Ha{background:linear-gradient(var(--default-gradient))}
+#app-mount .side-8zPYf6 .item-PXvHYJ[aria-controls="Discord Nitro-tab"]:active,#app-mount .side-8zPYf6 .item-PXvHYJ[aria-controls="Discord Nitro-tab"][aria-selected=true],#app-mount .side-8zPYf6 .item-PXvHYJ[aria-controls=GUILD_PREMIUM-tab]:active,#app-mount .side-8zPYf6 .item-PXvHYJ[aria-controls=GUILD_PREMIUM-tab][aria-selected=true]{background:linear-gradient(var(--special-gradient));color:#fff}
+#app-mount .lookFilled-1Gx00P{transform:var(--transform-normal);transition:.15s linear}
+#app-mount .lookFilled-1Gx00P:hover{transform:var(--button-hover-transform)}
+#app-mount .lookFilled-1Gx00P.colorBrand-3pXr91:not(.buttonActive-3FrkXp){background:linear-gradient(var(--default-gradient))}
+#app-mount .lookFilled-1Gx00P.colorGrey-2DXtkV,#app-mount .lookFilled-1Gx00P.colorPrimary-3b3xI6{background:linear-gradient(var(--grey-gradient))}
+#app-mount .lookFilled-1Gx00P.buttonColor-7qQbGO.disabled-158sUq{background:linear-gradient(var(--grey-gradient))}
+#app-mount .lookFilled-1Gx00P.buttonColor-7qQbGO.disabled-158sUq:hover{transform:var(--transform-normal)}
+#app-mount .lookFilled-1Gx00P.colorGreen-29iAKY,#app-mount .lookFilled-1Gx00P.buttonActive-3FrkXp{background:linear-gradient(var(--green-gradient))}
+#app-mount .lookFilled-1Gx00P.colorYellow-2JqYwt{background:linear-gradient(var(--yellow-gradient))}
+#app-mount .lookFilled-1Gx00P.colorRed-1TFJan{background:linear-gradient(var(--red-gradient))}
+.channelTextArea-rNsIhG {box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);}
+/* Bubble messages */
+.cozyMessage-3V1Y8y .contents-2mQqc9 > .markup-2BOw-j:not(:empty) {
+    background-color: rgba(90, 90, 90, 0.5);
+    display: inline-block;
+    margin: 0;
+    padding: 8px;
+    border-radius: 20px;
+}
+.listItem-GuPuDH:hover .numberBadge-2s8kKX {background-color: rgb(184, 184, 184) !important}
+.aboutMeSection-1Fw5Ia:hover > .aboutMeBody-3GuvKk {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+.aboutMeBody-3GuvKk {
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+.aboutMeTitle-1IYtPE:after {
+    content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>');
+    display:block;
+    width:16px;
+    height:16px;
+    margin-left: 5px;
+}
+.aboutMeSection-1Fw5Ia:hover > .aboutMeTitle-1IYtPE:after {
+    content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');
+    display:block;
+    width:16px;
+    height:16px;
+    margin-left: 5px;
+}
+.sprite-2iCowe {
+    background: url("https://cdn.discordapp.com/attachments/542030029861814284/806284153485000764/Pepe.png");
+}
+.role-2irmRk {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  padding: 5px;
+}
+.roleCircle-3xAZ1j::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  opacity: .2;
+  pointer-events: none;
+}
+.footer-1fjuF6 {
+  border-top: none;
+}
+.username-1A8OIy {
+    background-image: linear-gradient(transparent, rgb(255, 255, 255), rgb(0, 0, 0));
+    color: transparent !important;
+    -webkit-background-clip: text;
+}
+.username-1A8OIy:after {
+    background-image: linear-gradient(190deg, transparent, rgb(255, 255, 255), rgb(59, 59, 59));
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 17px;
+    left: 0;
+}
+:root {
+--watermark-text: "Tech";
+--watermark-version: var(--version);
+--watermark-text-top: 2px;
+--watermark-text-left: 3.4rem;
+--watermark-gradient: 270deg, rgb(0, 0, 0), rgb(255, 255, 255);
+}
+@keyframes Gradient { 0%{background-position:0 50%} 50%{background-position:100% 50%} 100%{background-position:0 50%} }
+.wordmark-2iDDfm:after{content:var(--watermark-text);font-size:20px;font-weight:700;position:absolute;width:4000px;top:7px;color:var(--background-accent);margin-left:var(--watermark-text-left);font-family:Discord}
+.wordmark-2iDDfm > svg{width:0}
+#app-mount .titleBar-AC4pGV{z-index:5;background-color:var(--background-secondary);border-radius:var(--titlebar-borders-radius)!important;margin-top:var(--titlebar-borders-radius-top)!important;margin-bottom:var(--titlebar-borders-radius-bottom)!important;margin-right:var(--titlebar-borders-radius-right)!important;margin-left:var(--titlebar-borders-radius-left)!important;padding-top:0}
+    #app-mount .titleBar-AC4pGV .wordmark-2iDDfm svg{width:0}
+    #app-mount .titleBar-AC4pGV .wordmark-2iDDfm::after{content:var(--watermark-text);position:absolute;font-family:Discord;background:linear-gradient(var(--watermark-gradient));animation:Gradient 4s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200% 200%;font-weight:600;top:var(--watermark-text-top)}
+    
+.container-1giJp5,
+.panels-j1Uci_{
+    border-radius: 2px!important;
+    border-radius: 2px;
+}
+#app-mount .sidebar-2K8pFh, #app-mount .notice-3bPHh-{
+    border-radius: 2px!important;
+}
+.connection-3KRENF, .voiceUsers-YsH5Db{
+    border-radius: 2px!important;
+}
+.children-19S4PO{
+  transition: 0.5s 0.1s;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+.toolbar-1t6TWx{
+  transition: 0.5s 0.1s;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+.container-1r6BKw .children-19S4PO:hover, .container-1r6BKw  .toolbar-1t6TWx:hover{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.container-1r6BKw {
+  height: 0px !important;
+}
+.container-1r6BKw .children-19S4PO, .container-1r6BKw .toolbar-1t6TWx {
+  padding: 5px;
+  top: 25px;
+  position: relative;
+  background: var(--background-secondary-alt);
+  border-radius: 7px;
+}
+.message-2qnXI6:hover .reactionCount-2mvXRV {
+     font-size: 14px;
+     transform: translate(0px);
+     transition-delay: 0s;
+}
+ .message-2qnXI6:hover .reaction-1hd86g {
+     max-width: 90px;
+     width: auto;
+}
+ .reaction-1hd86g {
+     max-width: 30px;
+     transition: 0.5s;
+     transition-timing-function: ease-out;
+}
+ .reactionCount-2mvXRV {
+     font-size: 0px;
+     transition-duration: 0.2s;
+     transform: translate(-20px);
+     transition-timing-function: ease-out;
+     transition-delay: 0.1s;
+}
