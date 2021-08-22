@@ -118,7 +118,7 @@
       --bd-color: rgb(255, 255, 255) ;
       --bd-color-hover: rgb(255, 255, 255) ;
       --alt-color: 255, 255, 255;
-      --alt-color2: rgb(177, 177, 177) ;
+      --alt-color2:  rgb(0, 132, 255);
       --alt-color3: 204 ;/* HSL */
       
       --playing-color: var(--alt-color2) ;
